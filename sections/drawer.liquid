@@ -86,12 +86,10 @@ $( document ).ready(function() {
  var total_price = $(".total_price_set").text();
  
  var actual_price = $(".pro_price").text();
-function multiply(a, b) {
-  return a * b;
-}
-var s1 = multiply(total_price, actual_price);
+  var mul = actual_price * total_price;
 
- alert(s1);
+
+ alert(mul);
     $(this).closest('#cart__drawer').find('.progress-bar').addClass("append_color");
     
 
