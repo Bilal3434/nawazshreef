@@ -78,16 +78,7 @@ function cartLoad(){
 </script>
 <script>
 $( document ).ready(function() {
- $(document).ready(function(){
- $(".cart_plus").on('click', function() {
- var total_price = $(".total_price_set").text();
-  alert(total_price);
-    $(this).closest('#cart__drawer').find('.progress-bar').addClass("append_color");
-    
 
-   
-  });
-});
   $(document).on('click','.cart_plus',function(){
 
     var show= $(this).closest('.cart_inner').find('.input__id').val();
@@ -141,6 +132,20 @@ $( document ).ready(function() {
 </script>
 
 <script>
+ $(document).ready(function(){
+ $(".cart_plus").on('click', function() {
+ var total_price = $(".total_price_set").text();
+  alert(total_price);
+    $(this).closest('#cart__drawer').find('.progress-bar').addClass("append_color");
+    
+
+   
+  });
+});
+</script>
+
+<script>
+
   $(document).on('click','.cart_min',function(){
 
     var show= $(this).closest('.cart_inner').find('.input__id').val();
