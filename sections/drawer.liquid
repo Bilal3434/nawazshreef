@@ -201,7 +201,16 @@ $( document ).ready(function() {
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script>
- 
+ $(document).ready(function(){
+ $(".cart_plus").on('click', function() {
+ var total_price = $(".total_price_set").text();
+  alert(total_price);
+    $(this).closest('#cart__drawer').find('.progress-bar').addClass("append_color");
+    
+
+   
+  });
+});
 </script>
 
 
