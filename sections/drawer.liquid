@@ -86,8 +86,12 @@ $( document ).ready(function() {
  var total_price = $(".total_price_set").text();
  
  var actual_price = $(".pro_price").text();
- var mul = total_price * actual_price;
- alert(mul);
+function somma(a, b) {
+  return a + b;
+}
+var s1 = somma(total_price, actual_price);
+
+ alert(s1);
     $(this).closest('#cart__drawer').find('.progress-bar').addClass("append_color");
     
 
