@@ -199,7 +199,9 @@ $( document ).ready(function() {
 <script>
 $(document).ready(function(){
  $("#next").on('click', function() {
-    $(".progress-bar").addClass("append_color");
+    $(this).closest('#cart__drawer').find('.progress-bar').addClass("append_color");
+    
+
    
   });
 }); 
