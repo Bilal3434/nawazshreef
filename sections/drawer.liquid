@@ -81,6 +81,15 @@ $( document ).ready(function() {
 
   $(document).on('click','.cart_plus',function(){
 
+
+
+ var total_price = $(".total_price_set").text();
+  alert(total_price);
+    $(this).closest('#cart__drawer').find('.progress-bar').addClass("append_color");
+    
+
+   
+ 
     var show= $(this).closest('.cart_inner').find('.input__id').val();
     var idd = Number(show);
   
