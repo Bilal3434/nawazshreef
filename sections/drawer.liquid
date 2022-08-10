@@ -99,14 +99,14 @@ $( document ).ready(function() {
      var RemoveFirstCharSub = result.substring(1);
    var test = parseInt(RemoveFirstCharSub);
    if(test > 800){
-       var id = 42331302068377;
+       var id = 7488619151513;
  
-   var quantity = $('.click-int').val();
+  
  $.ajax({
       type: 'POST', 
       url: '/cart/change.js',
       dataType: 'json', 
-      data: {id:id,quantity:quantity},
+      data: {id:id},
       success: "hello world",
       error: "faild"
    });
