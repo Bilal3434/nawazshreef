@@ -85,11 +85,11 @@ $( document ).ready(function() {
     var result  = $('.total_price_set').text();
     var RemoveFirstCharSub = result.substring(1);
     alert(RemoveFirstCharSub);
-    // var test = parseInt(RemoveFirstCharSub);
-    // alert(test);
-    // if (test == 1){
-    // alert("hellow");
-    // }
+    var test = parseInt(RemoveFirstCharSub);
+    alert(test);
+    if (test > 1){
+    alert("hellow");
+    }
     
      $(this).closest('#cart__drawer').find('.progress-bar').addClass("append_color");
        
