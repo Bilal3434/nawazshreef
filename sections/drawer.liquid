@@ -82,33 +82,14 @@ $( document ).ready(function() {
 
   $(document).on('click','.cart_plus',function(){
 
-
-
- // // var quantity_val = $(".cart_val").val();
- // // alert(quantity_val);
-
-    
- // var actual_price = $(".actual_value").val();
- //     // var sum = (actual_price * quantity_val) ;
-     
- //     // var final_result =  sum/100;
- //    var final_price= actual_price /100;
- //    alert(final_price);
- //   if(final_price > 1000){
- //     var result = final_price * 100 / 100 ;
- //     alert("Now you recieved 100% free" + result);
- //   }
- //    else{
- //      alert("if you buy product more than 1000 not recieved discount " + final_price );
- //    }
-    var result  = $('.total_price_set').text();
-    var RemoveFirstCharSub = result.substring(1);
-    alert(RemoveFirstCharSub);
-    var test = parseInt(RemoveFirstCharSub);
-    alert(test);
-    if (test == 1){
-    alert("hellow");
-    }
+    // var result  = $('.total_price_set').text();
+    // var RemoveFirstCharSub = result.substring(1);
+    // alert(RemoveFirstCharSub);
+    // var test = parseInt(RemoveFirstCharSub);
+    // alert(test);
+    // if (test == 1){
+    // alert("hellow");
+    // }
     
     $(this).closest('#cart__drawer').find('.progress-bar').addClass("append_color");
     
@@ -247,6 +228,25 @@ $( document ).ready(function() {
 
 
 
+
+
+ // // var quantity_val = $(".cart_val").val();
+ // // alert(quantity_val);
+
+    
+ // var actual_price = $(".actual_value").val();
+ //     // var sum = (actual_price * quantity_val) ;
+     
+ //     // var final_result =  sum/100;
+ //    var final_price= actual_price /100;
+ //    alert(final_price);
+ //   if(final_price > 1000){
+ //     var result = final_price * 100 / 100 ;
+ //     alert("Now you recieved 100% free" + result);
+ //   }
+ //    else{
+ //      alert("if you buy product more than 1000 not recieved discount " + final_price );
+ //    }
 
 
 
