@@ -7,7 +7,7 @@
         <a style="text-decoration:none; color:red;" class="drawer__title" href="https://gymmenca.myshopify.com/collections/all">
         Continue Shopping</a>
       </div>
-      <input type="hidden" class="actual_value" value="{{ product.price }}">
+      <input type="hidden" class="actual_value" value="{{ product.total_price }}">
       <button class="drawer__close" data-drawer-close aria-label="Close Drawer"></button>
     </div>
     <div class="drawer__content" id="cart__drawer">
@@ -84,12 +84,15 @@ $( document ).ready(function() {
 
 
 
- var quantity_val = $(".cart_val").val();
- alert(quantity_val);
+ // var quantity_val = $(".cart_val").val();
+ // alert(quantity_val);
+
+    
  var actual_price = $(".actual_value").val();
-     var sum = (actual_price * quantity_val) ;
+     // var sum = (actual_price * quantity_val) ;
      
-     var final_result =  sum/100;
+     // var final_result =  sum/100;
+    var final_price= actual_price /100;
    if(final_result > 1000){
      var result = final_result * 100 / 100 ;
      alert("Now you recieved 100% free" + result);
