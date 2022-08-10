@@ -84,10 +84,9 @@ $( document ).ready(function() {
 
     var result  = $('.total_price_set').text();
     var RemoveFirstCharSub = result.substring(1);
-    parseInt(RemoveFirstCharSub);
-    if( RemoveFirstCharSub > 1000){
-      alert("hello");
-    }
+    var test = parseInt(RemoveFirstCharSub);
+    alert(test);
+    
    
     
      $(this).closest('#cart__drawer').find('.progress-bar').addClass("append_color");
