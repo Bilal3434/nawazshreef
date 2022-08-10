@@ -101,7 +101,7 @@ $( document ).ready(function() {
  //    else{
  //      alert("if you buy product more than 1000 not recieved discount " + final_price );
  //    }
-    var result  =Shopify.formatMoney(product.price, '{{amount}}');
+    var result  =Shopify.formatMoney('1000', '{{amount}}');
 
     
     alert(result);
