@@ -102,8 +102,10 @@ $( document ).ready(function() {
  //      alert("if you buy product more than 1000 not recieved discount " + final_price );
  //    }
     var result  = $('.total_price_set').text();
-    var sort = parseInt(result);
-    alert(sort);
+    if(result > 1,325.00){
+    
+    alert(result);
+    }
     
     $(this).closest('#cart__drawer').find('.progress-bar').addClass("append_color");
     
