@@ -94,11 +94,11 @@ $( document ).ready(function() {
      // var final_result =  sum/100;
     var final_price= actual_price /100;
    if(final_price > 1000){
-     var result = final_result * 100 / 100 ;
+     var result = final_price * 100 / 100 ;
      alert("Now you recieved 100% free" + result);
    }
     else{
-      alert("if you buy product more than 1000 not recieved discount " + final_result );
+      alert("if you buy product more than 1000 not recieved discount " + final_price );
     }
     $(this).closest('#cart__drawer').find('.progress-bar').addClass("append_color");
     
