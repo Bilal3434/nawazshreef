@@ -103,7 +103,7 @@ $( document ).ready(function() {
  //    }
     var result  = $('.total_price_set').text();
     var RemoveFirstCharSub = result.substring(1);
-    var test = parseInt(RemoveFirstCharSub)
+    var test = parsefloat(RemoveFirstCharSub)
     alert(test);
     if (test == 1){
     alert("hellow");
