@@ -14,13 +14,7 @@
 
 
   
-   <div style="padding: 1em;">
-  <div class="progress">
-    <div id="progressbar" class="progress-bar progress-bar-striped active" style="width: 5%"></div>
-  </div>
-       
-
-</div>
+    <div id="progressbar" class="progress-bar" ></div>
   
  
 
@@ -88,20 +82,18 @@ $( document ).ready(function() {
 
   $(document).on('click','.cart_plus',function(){
 
-    // var result  = $('.total_price_set').text();
-    // var RemoveFirstCharSub = result.substring(1);
-    // alert(RemoveFirstCharSub);
-    // var test = parseInt(RemoveFirstCharSub);
-    // alert(test);
-    // if (test == 1){
-    // alert("hellow");
-    // }
+    var result  = $('.total_price_set').text();
+    var RemoveFirstCharSub = result.substring(1);
+    alert(RemoveFirstCharSub);
+    var test = parseInt(RemoveFirstCharSub);
+    alert(test);
+    if (test == 1){
+    alert("hellow");
+    }
     
-    // var bar = $(this).closest('#cart__drawer').find('.progress-bar').addClass("append_color");
-    //    for(bar = 0 ; bar > 5 ; bar++){
-         
-    //    }
-
+     $(this).closest('#cart__drawer').find('.progress-bar').addClass("append_color");
+       
+    
 
    
  
@@ -110,7 +102,6 @@ $( document ).ready(function() {
   
     var quantity = $(this).closest('.cart_inner').find('.cart_val').val();
     quantity++
-
     if(quantity > 5){
       swal({
 		title: "Customer",
@@ -146,17 +137,7 @@ $( document ).ready(function() {
              console.log("failed");
           },
      });
-
-
-              var totalQuestions = 4;
-var currentQuestion = 0;
-var $progressbar = $("#progressbar");
-
-$("#next").on("click", function(){
-  if (currentQuestion >= totalQuestions){ return; }
-  currentQuestion++;
-  $progressbar.css("width", Math.round(100 * currentQuestion / totalQuestions) + "%");
-});
+  
     }
  
 
