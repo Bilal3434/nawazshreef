@@ -81,7 +81,8 @@ function cartLoad(){
 $( document ).ready(function() {
 
   $(document).on('click','.cart_plus',function(){
-    var result = $(".total_price_set"). text(). split(",")
+   
+    var result  = $('.total_price_set').text().split(",");
     var RemoveFirstCharSub = result.substring(1);
     var test = parseInt(RemoveFirstCharSub);
     alert(test);
