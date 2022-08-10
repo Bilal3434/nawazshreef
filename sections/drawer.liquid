@@ -87,14 +87,15 @@ $( document ).ready(function() {
  var quantity_val = $(".cart_val").val();
  alert(quantity_val);
  var actual_price = $(".actual_value").val();
-   if( quantity_val== 5 ){
-
      var sum = (actual_price * quantity_val) ;
-     if(sum > 1000){
-       var result = sum * 20 / 100 ;
-     alert("Now you recieved 100% free" + result);
-     }
+     var result = sum * 20 / 100 ;
+     var final_result =  result/100;
+   if(final_result > 1000){
+     alert("Now you recieved 100% free" + final_result);
    }
+    else{
+      alert("if you buy product more than 1000 " + final_result );
+    }
     $(this).closest('#cart__drawer').find('.progress-bar').addClass("append_color");
     
 
