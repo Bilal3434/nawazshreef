@@ -121,17 +121,6 @@ $( document ).ready(function() {
      
     else {
 
-         var id = 7488619151513;
- 
-
- $.ajax({
-      type: 'POST', 
-      url: '/cart/change.js',
-      dataType: 'json', 
-      data: {id:id},
-      success: "hello world",
-      error: "faild"
-   });
 
     $(this).closest('.cart_inner').find('.cart_val').val(quantity);
     
