@@ -7,7 +7,7 @@
         <a style="text-decoration:none; color:red;" class="drawer__title" href="https://gymmenca.myshopify.com/collections/all">
         Continue Shopping</a>
       </div>
-      <input type="text" class=" actual_value " value="{{ product.price }}">
+      <input type="hidden" class="actual_value" value="{{ product.price }}">
       <button class="drawer__close" data-drawer-close aria-label="Close Drawer"></button>
     </div>
     <div class="drawer__content" id="cart__drawer">
@@ -86,10 +86,10 @@ $( document ).ready(function() {
 
  var quantity_val = $(".cart_val").val();
  alert(quantity_val);
- var actual_price = $(".pro_price").text();
+ var actual_price = $(".actual_value").val();
    
 
-     var sum = actual_price + quantity_val ;
+     var sum = actual_price * quantity_val ;
      alert(sum);
     $(this).closest('#cart__drawer').find('.progress-bar').addClass("append_color");
     
