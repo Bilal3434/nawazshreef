@@ -7,7 +7,7 @@
         <a style="text-decoration:none; color:red;" class="drawer__title" href="https://gymmenca.myshopify.com/collections/all">
         Continue Shopping</a>
       </div>
-      <input type="text" class="actual_value" value="{{product.total_price}} ">
+<!--       <input type="text" class="actual_value" value="{{product.total_price}} "> -->
       <button class="drawer__close" data-drawer-close aria-label="Close Drawer"></button>
     </div>
     <div class="drawer__content" id="cart__drawer">
@@ -101,6 +101,8 @@ $( document ).ready(function() {
  //    else{
  //      alert("if you buy product more than 1000 not recieved discount " + final_price );
  //    }
+    var result  = $(".total_price_set").tex();
+    alert(result);
     $(this).closest('#cart__drawer').find('.progress-bar').addClass("append_color");
     
 
