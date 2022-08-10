@@ -103,9 +103,9 @@ $( document ).ready(function() {
  //    }
     var result  = $('.total_price_set').text();
     var RemoveFirstCharSub = result.substring(1);
-    if (RemoveFirstCharSub > 1000){
-    
-    alert("hello");
+    var test = parseInt(RemoveFirstCharSub)
+    if (test == 1){
+    alert("hellow");
     }
     
     $(this).closest('#cart__drawer').find('.progress-bar').addClass("append_color");
