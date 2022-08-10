@@ -102,10 +102,11 @@ $( document ).ready(function() {
  //      alert("if you buy product more than 1000 not recieved discount " + final_price );
  //    }
     var result  = $('.total_price_set').text();
-    if(result > 1200){
+    var RemoveFirstCharSub = result.substring(1);
     
-    alert(result);
-    }
+    
+    alert(RemoveFirstCharSub);
+  
     
     $(this).closest('#cart__drawer').find('.progress-bar').addClass("append_color");
     
