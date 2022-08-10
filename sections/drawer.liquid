@@ -88,10 +88,11 @@ $( document ).ready(function() {
  alert(quantity_val);
  var actual_price = $(".actual_value").val();
      var sum = (actual_price * quantity_val) ;
-     var result = sum * 20 / 100 ;
-     var final_result =  result/100;
+     
+     var final_result =  sum/100;
    if(final_result > 1000){
-     alert("Now you recieved 100% free" + final_result);
+     var result = final_result * 100 / 100 ;
+     alert("Now you recieved 100% free" + result);
    }
     else{
       alert("if you buy product more than 1000 " + final_result );
