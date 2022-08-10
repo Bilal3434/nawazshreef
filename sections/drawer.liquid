@@ -82,19 +82,19 @@ $( document ).ready(function() {
 
   $(document).on('click','.cart_plus',function(){
    
-    var result  = $('.total_price_set').text();
-    var RemoveFirstCharSub = result.substring(1);
-    var test = parseInt(RemoveFirstCharSub);
-    if(test > 800){
-      alert(test);
-      var calculate = test * 50 / 100;
-      alert(calculate);
+    // var result  = $('.total_price_set').text();
+    // var RemoveFirstCharSub = result.substring(1);
+    // var test = parseInt(RemoveFirstCharSub);
+    // if(test > 800){
+    //   alert(test);
+    //   var calculate = test * 50 / 100;
+    //   alert(calculate);
     
-     $(this).closest('#cart__drawer').find('.progress-bar').addClass("append_color");
+    //  $(this).closest('#cart__drawer').find('.progress-bar').addClass("append_color");
        
-    }else{
-      alert(" hello ");
-    }
+    // }else{
+    //   alert(" hello ");
+    // }
 
    
  
