@@ -83,8 +83,6 @@ $( document ).ready(function() {
   $(document).on('click','.cart_plus',function(){
 
     var result  = $('.total_price_set').text();
-     var testa = parseInt(result);
-    alert(testa);
     var RemoveFirstCharSub = result.substring(1);
     alert(RemoveFirstCharSub);
     var test = parseInt(RemoveFirstCharSub);
