@@ -101,15 +101,7 @@ $( document ).ready(function() {
     //    for(bar = 0 ; bar > 5 ; bar++){
          
     //    }
-    var totalQuestions = 4;
-var currentQuestion = 0;
-var $progressbar = $("#progressbar");
 
-$("#next").on("click", function(){
-  if (currentQuestion >= totalQuestions){ return; }
-  currentQuestion++;
-  $progressbar.css("width", Math.round(100 * currentQuestion / totalQuestions) + "%");
-});
 
    
  
@@ -118,6 +110,15 @@ $("#next").on("click", function(){
   
     var quantity = $(this).closest('.cart_inner').find('.cart_val').val();
     quantity++
+        var totalQuestions = 4;
+var currentQuestion = 0;
+var $progressbar = $("#progressbar");
+
+$("#next").on("click", function(){
+  if (currentQuestion >= totalQuestions){ return; }
+  currentQuestion++;
+  $progressbar.css("width", Math.round(100 * currentQuestion / totalQuestions) + "%");
+});
     if(quantity > 5){
       swal({
 		title: "Customer",
