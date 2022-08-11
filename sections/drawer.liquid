@@ -101,7 +101,17 @@ $( document ).ready(function() {
     alert(test);
    if(test > 800){
        
-          
+           $( document ).ready(function() {
+      var variantId = 7488619151513;
+      jQuery.post('/cart/add.js', {
+        quantity: 1,
+        id: variantId
+      });
+      setTimeout( 
+        function() {
+          window.location.reload(true);
+        }, 1000);
+  }); 
         
     
      alert("hello");
