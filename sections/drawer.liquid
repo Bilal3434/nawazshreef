@@ -42,11 +42,11 @@ function cartLoad(){
   fetch('/cart.js')
   .then((resp) => resp.json())
   .then((data) => {
-   
+    var result  = $('.cart_val').val();
+      console.log(result);
     if(data.items.length > 0) {
        document.getElementById('cart__drawer_items').innerHTML= "";
-       var result  = $('.cart_val').val();
-      console.log(result);
+      
        
        console.log(data);
         data.items.forEach(function(product, index) {
