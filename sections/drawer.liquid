@@ -47,8 +47,9 @@ function cartLoad(){
        document.getElementById('cart__drawer_items').innerHTML= "";
        console.log(data);
         data.items.forEach(function(product, index) {
-          var fetchprice = $('#append__final_price').text( Shopify.formatMoney(data.total_price, '{{amount}}') )
-        alert(fetchprice);
+        $('#append__final_price').text( Shopify.formatMoney(data.total_price, '{{amount}}') )
+       var result  = $('.total_price_set').text();
+          alert(result);
           var varvalue;
          product.options_with_values.forEach((number, index) => { 
           var val;
