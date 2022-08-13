@@ -46,21 +46,10 @@ function cartLoad(){
     if(data.items.length > 0) {
        document.getElementById('cart__drawer_items').innerHTML= "";
        console.log(data);
-          var result  = $('.total_price_set').text();
-          var RemoveFirstCharSub = result.substring(1);
-          var test = parseInt(RemoveFirstCharSub);
-           alert(test);
-   // if(test > 800){
-       
-  
-        
-    
-   //   alert("hello");
-       
-   //   }
         data.items.forEach(function(product, index) {
-          $('#append__final_price').text( Shopify.formatMoney(data.total_price, '{{amount}}') )
-        var varvalue;
+          var fetchprice = $('#append__final_price').text( Shopify.formatMoney(data.total_price, '{{amount}}') )
+        alert(fetchprice);
+          var varvalue;
          product.options_with_values.forEach((number, index) => { 
           var val;
           
