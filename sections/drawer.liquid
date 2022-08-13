@@ -42,12 +42,13 @@ function cartLoad(){
   fetch('/cart.js')
   .then((resp) => resp.json())
   .then((data) => {
-   var result  = $('#append__final_price').text();
+   
+    if(data.items.length > 0) {
+       document.getElementById('cart__drawer_items').innerHTML= "";
+      var result  = $('#append__final_price').text(Shopify.formatMoney(total_price, '{{amount}}'));
          var RemoveFirstCharSub = result.substring(1);
          var test = parseInt(RemoveFirstCharSub);
     alert(test);
-    if(data.items.length > 0) {
-       document.getElementById('cart__drawer_items').innerHTML= "";
        console.log(data);
         data.items.forEach(function(product, index) {
         $('#append__final_price').text( Shopify.formatMoney(data.total_price, '{{amount}}') )
