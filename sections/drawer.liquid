@@ -47,10 +47,8 @@ function cartLoad(){
        document.getElementById('cart__drawer_items').innerHTML= "";
       
        var result  = $('#append__final_price').text( Shopify.formatMoney(data.total_price, '{{amount}}') )
-      var array = $.map(result, function(value, index){
-        return [value];
-    });
-       alert(array);
+       var stringObj = JSON.stringify(result);
+    console.log(stringObj);
        console.log(data);
         data.items.forEach(function(product, index) {
         
