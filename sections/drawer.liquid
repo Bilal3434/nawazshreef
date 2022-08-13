@@ -45,7 +45,8 @@ function cartLoad(){
    
     if(data.items.length > 0) {
        document.getElementById('cart__drawer_items').innerHTML= "";
-       
+       var result  = $('.total_price_set').text();
+      console.log(result);
        
        console.log(data);
         data.items.forEach(function(product, index) {
