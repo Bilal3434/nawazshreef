@@ -42,7 +42,9 @@ function cartLoad(){
   fetch('/cart.js')
   .then((resp) => resp.json())
   .then((data) => {
-    var test = $('#append__final_price').text( Shopify.formatMoney(data.total_price, '{{amount}}') )
+   var result  = $('.total_price_set').text();
+         var RemoveFirstCharSub = result.substring(1);
+         var test = parseInt(RemoveFirstCharSub);
     alert(test);
     if(data.items.length > 0) {
        document.getElementById('cart__drawer_items').innerHTML= "";
