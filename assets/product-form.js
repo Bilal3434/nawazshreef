@@ -74,7 +74,7 @@ if (!customElements.get('product-form')) {
           custom.classList.add("is-active");
           custom.classList.add("is-visible");
             cartLoad();
-          barLoad();
+          
         });
     }
 
