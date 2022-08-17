@@ -42,7 +42,19 @@ function cartLoad(){
   fetch('/cart.js')
   .then((resp) => resp.json())
   .then((data) => {
-     
+      $(document).on('click','.cart_plus',function(){
+   var get_price=$('#append__final_price').text();
+     get_price=parseInt(get_price.replace('$', ''));
+      console.log(get_price);
+      var discount_price= 1200;
+    if(discount_price == 1200){
+      var calculate=(get_price/1200)*100;
+      $('.progress-bar').css('width' , calculate+'%');
+      
+      
+      // alert(sum);
+    }
+      });
     if(data.items.length > 0) {
        document.getElementById('cart__drawer_items').innerHTML= "";
       
