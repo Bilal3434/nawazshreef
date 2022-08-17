@@ -104,8 +104,9 @@ function cartLoad(){
 
 </script>
 <script>
+  function cartLoad(){
 $( document ).ready(function() {
-function cartLoad(){
+
   $(document).on('click','.cart_plus',function(){
    var get_price=$('#append__final_price').text();
      get_price=parseInt(get_price.replace('$', ''));
@@ -118,7 +119,7 @@ function cartLoad(){
       
       // alert(sum);
     }
-  }
+  
     
  // var result  = $('.total_price_set').text();
  //     var RemoveFirstCharSub = result.substring(1);
@@ -182,6 +183,7 @@ function cartLoad(){
     });
   
 });
+  }
 </script>
 
 <script>
