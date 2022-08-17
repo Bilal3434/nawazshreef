@@ -108,15 +108,13 @@ $( document ).ready(function() {
 
   $(document).on('click','.cart_plus',function(){
    
-    var result  = $('.total_price_set').text();
-    var RemoveFirstCharSub = result.substring(1);
-    var test = parseInt(RemoveFirstCharSub);
-    if(test > 500){
-    
-     $(this).closest('#cart__drawer').find('.progress-bar').addClass("append_color");
-       
-    }else{
-      alert(" hello ");
+    var abc=$('#append__final_price').text();
+     abc=parseInt(abc.replace('$', ''));
+      console.log(abc);
+      var d_price;
+    if(d_price == 1200){
+      var sum=(abc/1200)*100;
+      alert(sum);
     }
  var result  = $('.total_price_set').text();
      var RemoveFirstCharSub = result.substring(1);
