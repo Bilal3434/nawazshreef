@@ -126,7 +126,7 @@ $( document ).ready(function() {
        var get_price=$('#append__final_price').text();
        get_price=parseInt(get_price.replace('$', ''));
        console.log(get_price);
-       var discount_price= 1200;
+       //var discount_price= 1200;
        if(discount_price > 1200){
        var calculate=(get_price/1200)*100;
        $('.progress-bar').css('width' , calculate+'%');
