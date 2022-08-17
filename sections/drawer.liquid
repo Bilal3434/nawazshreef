@@ -37,7 +37,7 @@
 <script>
   $( document ).ready(function() {
    cartLoad();
-    barLoad();
+   
   });
 function cartLoad(){
   fetch('/cart.js')
@@ -118,11 +118,11 @@ function cartLoad(){
 
 </script>
 <script>
- 
+ function cartLoad(){
 $( document ).ready(function() {
 
   $(document).on('click','.cart_plus',function(){
-    function barLoad(){
+    
    var get_price=$('#append__final_price').text();
      get_price=parseInt(get_price.replace('$', ''));
       console.log(get_price);
@@ -134,7 +134,7 @@ $( document ).ready(function() {
       
       // alert(sum);
     }
-    }
+    
     
  // var result  = $('.total_price_set').text();
  //     var RemoveFirstCharSub = result.substring(1);
@@ -198,7 +198,7 @@ $( document ).ready(function() {
     });
   
 });
-  
+ } 
 </script>
 
 <script>
