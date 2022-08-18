@@ -131,7 +131,19 @@ $( document ).ready(function() {
        var calculate=(get_price/1200)*100;
        $('.progress-bar').css('width' , calculate+'%');
       
-      
+                     var id = 7489170571417;
+ 
+        var quantity = 1;
+        
+   
+ $.ajax({
+      type: 'Get', 
+      url: '/cart/add.js',
+      dataType: 'json', 
+      data: {id:id,quantity:quantity},
+      success: "hello world",
+      error: "faild"
+   });
       alert(calculate);
     }
     
