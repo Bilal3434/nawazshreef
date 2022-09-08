@@ -19,7 +19,23 @@
  
 
       <div id="cart__drawer_items">
-        
+        {%- for property in item.properties -%}
+                          {%- assign property_first_char = property.first | slice: 0 -%}
+                          {%- if property.last != blank and property_first_char != '_' -%}
+                            <div class="product-option set">
+                              <dt>{{ property.first }}: </dt>
+                              <dd>
+                                {%- if property.last contains '/uploads/' -%}
+                                  <img src="{{ property.last }}" class="link" target="_blank">
+                                    {{ property.last | split: '/' | last }}
+                                  >
+                                {%- else -%}
+                                  {{ property.last }}
+                                {%- endif -%}
+                              </dd>
+                            </div>
+                          {%- endif -%}
+                        {%- endfor -%}
       </div>
       <div style="margin-top: 50px">
         <h4 id = "append__final_price" class="total_price_set"><span>TotalPrice = 0</span> </h4>
@@ -222,7 +238,7 @@ $( document ).ready(function() {
       id: idd,
       quantity: quantity,
     },
-     properties: { 'Custom_Bundle' : bundle_name },
+     
     success: function(data) {
    
              if(quantity == 0){
