@@ -123,9 +123,9 @@
                               <dt>{{ property.first }}: </dt>
                               <dd>
                                 {%- if property.last contains '/uploads/' -%}
-                                  <a href="{{ property.last }}" class="link" target="_blank">
+                                  <img src="{{ property.last }}" class="link" target="_blank">
                                     {{ property.last | split: '/' | last }}
-                                  </a>
+                                  >
                                 {%- else -%}
                                   {{ property.last }}
                                 {%- endif -%}
