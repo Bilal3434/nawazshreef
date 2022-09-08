@@ -424,6 +424,10 @@
 
                 {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
                   <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" disabled>
+                  <p class="line-item-property__field">
+                         <label for="your-name">Enter your brand name</label>
+                      <input id="your-name" type="text" name="properties[Your name]">
+                      </p>
                   <div class="product-form__buttons bilal">
                     <button id="form__submit"
                       type="submit"
